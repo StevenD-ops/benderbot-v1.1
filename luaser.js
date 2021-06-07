@@ -380,7 +380,7 @@ denz.sendMessage(from, hasil, text, {quoted: { key: { fromMe: false, participant
       	case 'help':
 			if (isBanned) return reply(mess.only.benned)
 			if (!isUser) return reply(mess.only.userB)
-			dmenu = `
+			menu = `
 ╓───「 *_ʙᴏᴛ ɪɴғᴏ_* 」
 ║🎀 ᴜꜱᴇʀ ʀᴇɢɪsᴛᴇʀᴇᴅ: ${user.length}
 ╙───々
