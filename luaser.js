@@ -377,6 +377,7 @@ denz.sendMessage(from, hasil, text, {quoted: { key: { fromMe: false, participant
 
                 switch(command) {
 				case 'menu':
+      	case 'help':
 			if (isBanned) return reply(mess.only.benned)
 			if (!isUser) return reply(mess.only.userB)
 			dmenu = `
