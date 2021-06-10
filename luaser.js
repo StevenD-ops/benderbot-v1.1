@@ -4762,7 +4762,7 @@ method: 'get'
                 case 'play':
                     if (args.length < 1) return reply('Ingresa el nombre de la cancion')
 					costum('[✨] cargando', text)
-                    anu = await fetchJson(`https://videfikri.com/api/ytplayv2/?query=${args[0]}`, {method: 'get'})
+                    anu = await fetchJson(https:www.youtube.com/results?search_query=${args[0]}`, {method: 'get'})
                     anu1 = await getBuffer(anu.result.thumbnail)
                     anu2 = `➻ *ᴛɪᴛʟᴇ* : ${anu.result.title}\n`
                     anu2 += `➻ *ɪᴅ* : ${anu.result.id}\n`
