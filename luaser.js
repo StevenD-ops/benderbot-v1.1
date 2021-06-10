@@ -4759,9 +4759,9 @@ method: 'get'
                 denz.sendMessage(from, buff, video, {mimetype: 'video/mp4', filename: `${anu.format}.mp4`, quoted: mek})
                 await limitAdd(sender)
                 break */
-                /*case 'play':
-                    if (args.length < 1) return reply('ᴇɴᴛᴇʀ ᴀ sᴏɴɢ ᴛɪᴛʟᴇ')
-					costum('[✨] ᴘʀᴏᴄᴇss ʟᴏᴀᴅɪɴɢ', text)
+                case 'play':
+                    if (args.length < 1) return reply('Ingresa el nombre de la cancion')
+					costum('[✨] cargando', text)
                     anu = await fetchJson(`https://videfikri.com/api/ytplayv2/?query=${args[0]}`, {method: 'get'})
                     anu1 = await getBuffer(anu.result.thumbnail)
                     anu2 = `➻ *ᴛɪᴛʟᴇ* : ${anu.result.title}\n`
@@ -4775,7 +4775,7 @@ method: 'get'
                     denz.sendMessage(from, anu1, image,{caption: anu2, quoted: mek})
                     anu3 = await getBuffer(anu.result.url)
                     denz.sendMessage(from, anu3, audio, {mimetype: 'audio/mp4', quoted: mek})
-                    break*/
+                    break
                 case 'ytmp3':
   if (isBanned) return reply(mess.only.benned)
 				if (!isUser) return reply(mess.only.userB)
